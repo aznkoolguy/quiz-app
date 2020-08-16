@@ -1,0 +1,497 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+/* BASIC ATTRIBUTES */
+html {
+  height: 100%;
+}
+.color {
+  background-color: black;
+}
+.bkground-img {
+  background-color: black;
+  background-image: url("images/SOT-skull.jpg");
+  background-position: center;
+  position: relative;
+}
+.main {
+  display:flex;
+  flex-direction: column;
+  background-color: rgba(169,169,169,.6);
+  margin: 30px auto 30px auto;
+  width: 70%;
+  border-radius: 20px;
+  padding-bottom: 25px;
+}
+
+
+
+
+/* START QUIZ */
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.imgwrap {
+  width: 50%;
+  margin: auto;
+}
+.imgwrap img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: auto;
+}
+.title {
+  margin-bottom: 0;
+  color: darkslategray;
+  text-align: center;
+}
+.title h1 {
+  font-size: 40px;
+  font-family: "Pirata One";
+}
+.thing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px 0 20px;
+  align-items: center;
+  font-size: 20px;
+}
+.thing p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+  color: antiquewhite;
+  font-family: "Pirata One";
+  text-align: center;
+}
+.js-start-button {
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.24),0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 50px;
+  font-size: 30px;
+  color: darkslategray;
+  background-color: rgba(77, 191, 154);
+  padding: 10px 28px;
+  margin-top: 20px;
+  font-family: "Pirata One";
+}
+
+
+
+
+
+/*  QUIZ QUESTION PAGES  */
+header .item {
+  width: 70%;
+  margin: 60px auto 80px auto;
+  background-color: rgba(169, 169, 169, .7);
+  border-radius: 20px;
+  padding: 2px 0 2px 0;
+  font-family: "Pirata One";
+  text-align: center;
+  color: darkslategray;
+}
+.container {
+  display:flex;
+  flex-direction: column;
+  background-color: rgba(77, 191, 154,.8);
+  margin-left: auto;
+  margin-right: auto; 
+  width: 70%;
+  border-radius: 20px;
+}
+.container h2 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Pirata One";
+  color: darkslategray;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+.score p {
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: antiquewhite;
+  font-family: "Pirata One";
+}
+.js-question {
+  margin-bottom: 15px;
+}
+.js-question h1 {
+  font-family: "Pirata One";
+  font-size: 24px;
+  text-align: center;
+  color:antiquewhite;
+}
+.js-check-button button{
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  background-color: rgb(77, 191, 154);
+  color: darkslategray;
+  font-family: "Pirata One";
+}
+
+
+
+
+/*  FORM ATTRIBUTES  */
+#js-answer label {
+  display: block;
+  font-size: 18px;
+  font-family: "Pirata One";
+  display: inline;
+  color: antiquewhite;
+}
+#js-answer input[type="radio"] {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+input[type='radio'] + label{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+/*  FEEDBACK PAGE  */
+header .item2 {
+  width: 70%;
+  margin: 60px auto 80px auto;
+  background-color: rgba(169, 169, 169, .7);
+  border-radius: 20px;
+  padding: 2px 0 2px 0;
+  font-family: "Pirata One";
+  text-align: center;
+  color: darkslategray;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px 30px 20px;
+  align-items: center;
+}
+.container2 {
+  display:flex;
+  flex-direction: column;
+  background-color: rgba(77, 191, 154,.8);
+  margin-left: auto;
+  margin-right: auto; 
+  width: 70%;
+  border-radius: 20px;
+}
+.container2 h2 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Pirata One";
+  color: darkslategray;
+}
+.feedback h1 {
+  font-size: 35px;
+}
+.score-feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.score-feedback p {
+  font-size: 20px;
+  color: antiquewhite;
+  font-family: "Pirata One";
+}
+.js-feedback-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.js-feedback-button button {
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.24),0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 50px;
+  font-size: 20px;
+  color: darkslategray;
+  background-color: rgba(77, 191, 154);
+  padding: 10px 28px;
+  margin-top: 40px;
+  font-family: "Pirata One";
+}
+
+
+/*  FINAL RESULTS PAGE  */
+.restart h1 {
+  font-size: 40px;
+}
+.score-final {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.score-final p {
+  font-size: 20px;
+  color: antiquewhite;
+  font-family: "Pirata One";
+}
+.js-restart-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.js-restart-button button {
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.24),0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 50px;
+  font-size: 20px;
+  color: darkslategray;
+  background-color: rgba(77, 191, 154);
+  padding: 10px 28px;
+  margin-top: 40px;
+  font-family: "Pirata One";
+}
+
+@media all and (max-width: 399px) {
+  .container {
+    margin-top: -220px;
+  }
+  header .item {
+    visibility: hidden;
+  }
+  /*  FEEDBACK AND FINAL PAGE HEADER  */
+  header .item2 {
+    visibility: visible;
+  }
+
+}
+@media all and (min-width: 332px) and (max-width: 399px) {
+  .container {
+    margin-top: -160px;
+  }
+}
+
+@media all and (min-width: 400px) {
+  .main {
+    margin-top: 60px;
+  }
+
+  /*  START PAGE  */
+  .title h1 {
+    font-size: 45px;
+  }
+  .js-start-button {
+    font-size: 40px;
+  }
+  .thing p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+
+  /*  QUESTION PAGE  */
+  header .item h1 {
+    font-size: 45px;
+    visibility: visible;
+  }
+  .score {
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+  .js-question h1 {
+    font-size: 30px;
+  }
+  #js-answer label {
+    font-size: 23px;
+  }
+ 
+
+
+  /*  FEEDBACK PAGE  */
+  .container h2 {
+    font-size: 40px;
+  }
+  .feedback h1 {
+    font-size: 45px;
+  }
+  .score-feedback {
+    justify-content: space-evenly;
+  }
+  .score-feedback p {
+    font-size: 25px;
+  }
+  .js-feedback-button button {
+    font-size: 35px;
+  }
+
+
+  /*  RESULTS PAGE  */
+  .restart h1 {
+    font-size: 50px;
+  }
+  .score-final {
+    justify-content: space-evenly;
+  }
+  .score-final p {
+    font-size: 30px;
+  }
+  .js-restart-button button {
+    font-size: 35px;
+  }
+}
+
+
+
+@media all and (min-width: 1000px) {
+  /*  BASIC ELEMENTS  */
+  .bkground-img {
+    background-image: url("images/SOT-ships.jpg");
+    background-repeat: no-repeat;
+  }
+  header  {
+    padding: 2px 0 2px 0;
+    margin: 20px auto 60px auto;
+  }
+  
+
+
+  /*  START PAGE  */
+  .title h1 {
+    font-size: 70px;
+    margin-bottom: 0;
+  }
+  .thing p {
+    font-size: 30px;
+    color: darkslategray;
+  }
+  .js-start-button {
+    font-size: 50px;
+  }
+
+
+ 
+  /*  QUESTION PAGE  */
+  header .item h1 {
+    font-size: 70px;
+  }
+  .container h2 {
+    color: antiquewhite;
+  }
+  .score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+  .score p {
+    font-size: 25px;
+    font-family: "Pirata One";
+  }
+  .js-question h1 {
+    font-size: 40px;
+    color: darkslategray;
+    font-family: 'Pirata One';
+  }
+  #js-answer input[type="radio"]+label{
+    font-size: 30px;
+    display: inline;
+  }
+  #js-answer label {
+    font-size: 30px;
+    color: darkslategray;
+  }
+
+
+
+  /*  FEEDBACK PAGE  */
+ .feedback h1 {
+    font-size: 64px;
+  }
+  .score-feedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .score-feedback p {
+    font-size: 30px;
+    color: antiquewhite;
+    font-family: "Pirata One";
+  }
+  .js-feedback-button button {
+    font-size: 50px;
+  }
+ 
+
+  /*  RESULTS PAGE  */
+  .restart h1 {
+    font-size: 64px;
+  }
+  .score-final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .score-final p {
+    font-size: 30px;
+    color: antiquewhite;
+    font-family: "Pirata One";
+  }
+  .js-restart-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .js-restart-button button {
+    font-size: 40px;
+  }
+}
+
+
+
+/* FONTS */
+@font-face {
+  font-family: 'Satans-Minions';
+  src:url('Satans-Minions.ttf.woff') format('woff'),
+      url('Satans-Minions.ttf.svg#Satans-Minions') format('svg'),
+      url('Satans-Minions.ttf.eot'),
+      url('Satans-Minions.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Windlass';
+  src: url('Windlass.ttf');
+}
+
+@font-face {
+  font-family: 'Cartoon Bones'; 
+  src: url('Cartoon_bones.ttf');
+}
